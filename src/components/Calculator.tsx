@@ -22,7 +22,7 @@ export default function Calculator() {
       <Row justify="center">
         <Col>
           <InputNumber
-            type="number"
+            type="tel"
             min={0}
             defaultValue={0}
             size="large"
