@@ -1,5 +1,6 @@
 {
-  "name": "volumn-predictor",
+  "name": "volume-predictor",
+  "homepage": "https://coding-chris-kao.github.io/volume-predictor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
