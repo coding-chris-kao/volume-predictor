@@ -2,7 +2,6 @@ import { Col, InputNumber, message, Row } from "antd";
 import "./Calculator.css";
 import React, { useEffect, useState } from "react";
 import { getLatestTimeFactor } from "../ts/utils";
-import { time } from "console";
 
 export default function Calculator() {
   const [predictedVol, setPredictedVol] = useState(0);
@@ -23,6 +22,7 @@ export default function Calculator() {
       <Row justify="center">
         <Col>
           <InputNumber
+            type="number"
             min={0}
             defaultValue={0}
             size="large"
