@@ -14,7 +14,6 @@ export function getLatestTimeFactor(time: Date) {
   const h = time.getHours();
   const m = time.getMinutes();
   let currTimeValue = h * 60 + m;
-  currTimeValue = 610;
   if (currTimeValue < MIN_TIME || currTimeValue > MAX_TIME) return null;
 
   const found = TimeFactors.find((x) => {
