@@ -21,16 +21,8 @@ export default function Calculator() {
     <>
       <Row justify="center">
         <Col>
-          <InputNumber
-            type="tel"
-            min={0}
-            defaultValue={0}
-            size="large"
-            onChange={(value) => {
-              const tmp = value * currentTimeFactor;
-              setPredictedVol(Math.round(tmp));
-            }}
-          />
+          <div className="description"> Predicted Volume: </div>
+          <div className="result-display">{predictedVol}</div>
         </Col>
       </Row>
       <Row justify="center">
@@ -42,8 +34,16 @@ export default function Calculator() {
       </Row>
       <Row justify="center">
         <Col>
-          <div className="description"> Predicted Volume: </div>
-          <div className="result-display">{predictedVol}</div>
+          <InputNumber
+            type="tel"
+            min={0}
+            defaultValue={0}
+            size="large"
+            onChange={(value) => {
+              const tmp = value * currentTimeFactor;
+              setPredictedVol(Math.round(tmp));
+            }}
+          />
         </Col>
       </Row>
     </>
